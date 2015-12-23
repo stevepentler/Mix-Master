@@ -40,6 +40,7 @@ group :development, :test do
   gem 'launchy'
   gem 'awesome_print'
   gem 'better_errors'
+  gem 'shoulda-matchers'
 end
 
 group :development do
