@@ -41,6 +41,8 @@ group :development, :test do
   gem 'awesome_print'
   gem 'better_errors'
   gem 'shoulda-matchers'
+  gem 'factory_girl_rails'
+  gem 'database_cleaner'
 end
 
 group :development do
