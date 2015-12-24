@@ -3,7 +3,7 @@
 <ul>
   <li><%= link_to "Edit Artist", edit_artist_path(@artist) %></li>
   <li><%= link_to "Delete", artist_path(@artist), method: :delete %></li>
-  <li><%= link_to "New Song", new_artist_song_path(@artist) %></li>
+  <li><%= link_to "New Song", new_artist_song_path(@artist) %></li>  
 
 <% @artist.songs.each do |song| %>
   <p><%= song.title %></p>

@@ -1,6 +1,19 @@
 FactoryGirl.define do 
-  factory :artist do 
-    name  "Ja-Rule"
-    image_path "http://www.centrictv.com/content/dam/centric/whats-good/soulsessions/2012/02/09/Ja-Rule-Always-On-Time-537942.jpg"
+  factory :artist do
+    name
+    image_path "http://cps-static.rovicorp.com/3/JPG_400/MI0003/146/MI0003146038.jpg"
+  end
+
+  sequence :name do |n|
+      "#{n} Artist"
+    end 
+
+  sequence :title, ["A", "C", "B"].cycle do |n|
+    "#{n} Title"
   end 
-end 
+
+  factory :song do
+    title
+    artist
+  end
+end
