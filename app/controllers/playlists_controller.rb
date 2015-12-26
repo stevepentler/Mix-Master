@@ -11,6 +11,10 @@ class PlaylistsController < ApplicationController
     redirect_to @playlist
   end
 
+  def show
+    @playlist = Playlist.find(params[:id])
+  end 
+
 private
 
   def playlist_params
