@@ -5,7 +5,5 @@ RSpec.feature "User edits a playlist" do
     playlist1 = create_list(:playlist, 1)
 
     visit playlists_path
-    save_and_open_page
-
   end 
 end 
