@@ -4,8 +4,8 @@ Rails.application.routes.draw do
   end
 
   resources :songs, only: [:show]
-  resources :playlists, only: [:index]
-end 
+  resources :playlists, only: [:index, :new]
+end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

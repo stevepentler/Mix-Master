@@ -9,7 +9,6 @@ RSpec.feature "User submits a new song" do
 
     visit artist_path(artist)
     click_on "New Song"
-    save_and_open_page
 
     fill_in "Title", with: song_title
     click_on "Create Song"

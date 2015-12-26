@@ -4,7 +4,7 @@ RSpec.feature "User creates a playlist" do
   scenario "they see the page for the individual playlist" do
     song_one, song_two, song_three = create_list(:song, 3)
 
-    playlist_name = "SkiBoarding"
+    playlist_name = "My Jams"
 
     visit playlists_path
     click_on "New playlist"
